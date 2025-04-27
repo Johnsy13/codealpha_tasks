@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="Stylesheet" href="Img.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="gallery.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>IMAGE GALLERY</h1>
+
+    <div class="full-img" id="fullImgBox">
+        <img src="i1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+
+    <div class="contain">
+        <div>
+            <img src="p1.jpg" onclick="openFullImg(this.src)">
+            <h2>Perfume</h2>
+            <p>"Perfume is the art that makes memory speak through scent."</p>
+        </div>
+        <div>
+            <img src="p2.jpg" onclick="openFullImg(this.src)">
+            <h2>Perfume</h2>
+            <p>"A woman’s perfume tells more about her than her handwriting."</p>
+        </div>
+        <div>
+            <img src="p3.jpg" onclick="openFullImg(this.src)">
+            <h2>Perfume</h2>
+            <p>"Scent is the strongest tie to memory and emotion combined."</p>
+        </div>
+        <div>
+            <img src="p20.jpeg" onclick="openFullImg(this.src)">
+            <h2>Perfume</h2>
+            <p>"Perfume is the invisible, unforgettable accessory of personal style."</p>
+        </div>
+        <div>
+            <img src="p5.jpeg" onclick="openFullImg(this.src)">
+            <h2>Perfume</h2>
+            <p>"Fragrance is the voice of flowers whispering to the soul softly."</p>
+        </div>
+        <div>
+            <img src="p6.jpeg" onclick="openFullImg(this.src)">
+            <h2>Perfume</h2>
+            <p>"A good perfume is like a silent signature of elegance."</p>
+        </div>
+        <div>
+            <img src="p7.jpeg" onclick="openFullImg(this.src)">
+            <h2>Perfume</h2>
+            <p>"Perfume is a story in scent, sometimes a poetry of memory."</p>
+        </div>
+        <div>
+            <img src="p21.jpeg" onclick="openFullImg(this.src)">
+            <h2>Perfume</h2>
+            <p>"The beauty of a perfume is how it lingers after you’ve left."</p>
+        </div>
+        <div>
+            <img src="p9.jpeg" onclick="openFullImg(this.src)">
+            <h2>Perfume</h2>
+            <p>"Smell is a potent wizard that transports us across time."</p>
+        </div>
+        <div>
+            <img src="p10.jpeg" onclick="openFullImg(this.src)">
+            <h2>Perfume</h2>
+            <p>"Each drop of perfume is a note in a personal symphony."</p>
+        </div>
+        <div>
+            <img src="p11.jpeg" onclick="openFullImg(this.src)">
+            <h2>Perfume</h2>
+            <p>"Perfume is the key to our most vivid recollections and dreams."</p>
+        </div>
+        <div>
+            <img src="p12.jpeg" onclick="openFullImg(this.src)">
+            <h2>Perfume</h2>
+            <p>"There’s magic in a bottle of perfume—mood, mystery, and memory."</p>
+        </div>
+        <div>
+            <img src="p14.jpeg" onclick="openFullImg(this.src)">
+            <h2>Perfume</h2>
+            <p>"Wearing perfume is like dressing your soul in fragrant silk."</p>
+        </div>
+        <div>
+            <img src="p15.jpeg" onclick="openFullImg(this.src)">
+            <h2>Perfume</h2>
+            <p>"The right scent can turn an ordinary moment into something unforgettable."</p>
+        </div>
+        <div>
+            <img src="p18.jpeg" onclick="openFullImg(this.src)">
+            <h2>Perfume</h2>
+            <p>"Perfume is a message in a bottle, waiting to be noticed."</p>
+        </div>
+        <div>
+            <img src="p17.jpeg" onclick="openFullImg(this.src)">
+            <h2>Perfume</h2>
+            <p>"Inhale deeply; every perfume holds a secret story worth discovering."</p>
+        </div>
+    </div>
+
+    <script>
+        var fullImgBox=document.getElementById("fullImgBox");
+        var fullImg=document.getElementById("fullImg");
+    
+        function openFullImg(pic){
+            fullImgBox.style.display="flex";
+            fullImg.src= pic;           
+        }
+        function closeFullImg(){
+            fullImgBox.style.display="none";
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
